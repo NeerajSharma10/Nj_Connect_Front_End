@@ -1,0 +1,32 @@
+.profile-plus-main{
+    box-sizing: border-box;
+    /* border: 2px solid palevioletred; */
+    width: 100%;
+    margin-top: 0.9vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-plus-main > img{
+    width: 3.2vmax;
+    height: 3.2vmax;
+    border-radius: 25px;
+}
+
+.profile-plus-main > p{
+    font-weight: 500;
+    font-size: 16.5px;
+}
+.profile-plus-main > div{
+    width: 0.9vmax;
+    height: 0.9vmax;
+    background-color: greenyellow;
+    border-radius: 1.5vmax;
+    position: relative;
+    bottom: 1.1vmax;
+    right: 1.25vmax;
+    border: 2px solid white;
+}

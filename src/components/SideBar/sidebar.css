@@ -1,0 +1,64 @@
+.sidebar-main{
+    padding-top: 0.5vmax;
+    box-sizing: border-box;
+    flex: 1;
+    height: calc(100vh - 4vmax);
+    overflow-y: scroll;
+    position: sticky;
+    top: 61.44px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 253, 253, 0.3); 
+    border-radius: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+.sidebar-main > div{
+    box-sizing: border-box;
+    /* border: 2px solid rebeccapurple; */
+    margin-left: 0.7vmax;
+    height: 3.7vmax;
+    padding: 1vmax;
+    font-size: 18px;
+    font-weight:410;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sidebar-main > div > span{
+    padding-left: 1vmax;
+
+}
+
+.sidebarbutton{
+    /* margin: 1vmax; */
+    width: 15vmax;
+    height: 2.8vmax;
+    border: none;
+    border-radius: 12px;
+    margin-left: 1.5vmax;
+    margin-top: 1vmax;
+    font-size: 17px;
+   
+    cursor: pointer;
+}
+
+.sidebarprofileimage{
+    padding:0;
+}
+
+.sidebar-main > div > img{
+    width: 2.5vmax;
+    height: 2.5vmax;
+    border-radius: 10vmax;
+}

@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './NavBar.css'
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import {Link} from "react-router-dom";
+import {AuthContext} from "../../context/AuthContext"
+
 const NavBar = () => {
+
+  const {user} = useContext(AuthContext);
+
+
+
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <div className='topbar'>
@@ -42,7 +49,9 @@ const NavBar = () => {
           </div>
           
         </div>
-        <img className='proimage' src={`${PF}person/8.jpeg`} alt="Not found" />
+        <Link to={`profile/${user.username}`}>
+          <img className='proimage' src={user.profilePicture ? PF + user.profilePicture : PF + "person/avatar.jpg"} alt="Not found" />
+        </Link>
     </div>
   )
 }

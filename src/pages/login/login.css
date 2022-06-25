@@ -66,6 +66,10 @@
     font-weight: bold;
 }
 
+.loginButton:disabled{
+    cursor: not-allowed;
+}
+
 .loginButton:hover{
     background-color: red;
     border: none;
